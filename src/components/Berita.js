@@ -26,7 +26,7 @@ export default class Berita extends Component {
             <div className='ukuran-md-2'></div>
             <div className='ukuran-md-8'>
               <div className='card'>
-                <img src={post.urlToImage}></img>
+                <img alt='img' src={post.urlToImage}></img>
                 <div className='card-content'>
                   <h1>{post.title}</h1>
                   <p>{post.content}</p>

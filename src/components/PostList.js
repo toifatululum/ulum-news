@@ -183,7 +183,7 @@ class PostList extends Component {
         {console.log(this.props)}
         {loading ? (
           <div className='loading-background'>
-            <img className='loading' src='loading.gif' alt='' />
+            <img alt='img' className='loading' src='loading.gif' alt='' />
           </div>
         ) : (
           <>
@@ -250,6 +250,7 @@ class PostList extends Component {
                     )}
                     <div className='relative'>
                       <img
+                        alt='img'
                         className='banner-img-1'
                         src={
                           posts && posts.articles && posts.articles[0]
@@ -271,6 +272,7 @@ class PostList extends Component {
                     <div className='flex-space flex-direction height-100'>
                       <div className='relative'>
                         <img
+                          alt='img'
                           className='banner-img-2'
                           src={
                             posts && posts.articles && posts.articles[1]
@@ -289,6 +291,7 @@ class PostList extends Component {
                       </div>
                       <div className='relative'>
                         <img
+                          alt='img'
                           className='banner-img-3'
                           src={
                             posts && posts.articles && posts.articles[2]
@@ -319,6 +322,7 @@ class PostList extends Component {
                           >
                             <div className='card'>
                               <img
+                                alt='img'
                                 src={
                                   post &&
                                   post.urlToImage &&
